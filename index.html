@@ -5,14 +5,37 @@
     <title>HTML CSS Registration homework</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   </head>
   <body>
-    <form name="signUp" method="POST" action="https://reqres.in/api/register">
-      <input name="email" type="email" required/>
-      <input name="password" type="password" required/>
-      <input name="mobilePhone" type="tel" required/>
-      <button type="submit"
-      >register</button>
-    </form>
+    <div class="forms">
+      <input type="radio" id="sign-in-radio" name="sign-tabs" checked/>
+      <label for="sign-in-radio">Sign In</label>
+
+      <input type="radio" id="sign-up-radio" name="sign-tabs"/>
+      <label for="sign-up-radio">Sign Up</label>
+
+      <form class="sign-in" name="sign-in" method="POST" action="https://reqres.in/api/login">
+        <input class="sign-in__input" name="email" type="email" placeholder="Email" required/>
+        <input class="sign-in__input" name="password" type="password" placeholder="Password" required/>
+        <div class="sign-in__input">
+          <input id="remember" name="remember" type="checkbox" checked>
+          <label for="remember">Keep me logged in</label>
+        </div>
+        <input class="sign-in__input" type="submit" value="login"/>
+        <a href="#">Forgot password?</a>
+      </form>
+
+      <form class="sign-up" name="sign-up" method="POST" action="https://reqres.in/api/register">
+        <input class="sign-up__input" name="mobilePhone" type="tel" placeholder="Mobile Phone" required/>
+        <input class="sign-up__input" name="email" type="email" placeholder="Email ID" required/>
+        <input class="sign-up__input" name="password" type="password" placeholder="Password" required/>
+        <div class="sign-up__input">
+          <input id="agree" name="agree" type="checkbox" checked>
+          <label for="agree">I agree to terms and conditions</label>
+        </div>
+        <input class="sign-up__input" type="submit" value="register"/>
+      </form>
+    </div>
   </body>
 </html>

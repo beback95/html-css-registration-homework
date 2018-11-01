@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Deja Vu Sans';
+    src:
+        url('./static/fonts/DejaVuSans.woff'),
+        url('./static/fonts/DejaVuSans.eot?#iefix') format('embedded-opentype'),
+        url('./static/fonts/DejaVuSans.ttf') format('truetype'),
+        url('./static/fonts/DejaVuSans.svg#svgFontName') format('svg');
+}
