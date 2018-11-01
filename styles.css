@@ -1,0 +1,151 @@
+@import url('./fonts.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Deja Vu Sans'
+}
+
+.content {
+    background: #e3e3e3 url('./static/images/background.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.auth-section {
+    padding: 45px;
+    max-width: 430px;
+    background: rgba(0,0,0, 0.7);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-section__radio {
+    display: none;
+}
+
+.auth-section__label {
+    width: 100px;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 35px;
+    text-transform: uppercase;
+}
+
+.sign-in-radio:checked + label,
+.sign-up-radio:checked + label {
+    border-bottom: 4px solid #ffab1a;
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+.sign-in-radio:checked ~ .sign-in,
+.sign-up-radio:checked ~ .sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.sign-in,
+.sign-up {
+    display: none;
+}
+
+.sign-in__input,
+.sign-up__input {
+    width: 100%;
+    height: 30px;
+    padding: 10px 0;
+    margin: 30px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 17px;
+    background: none;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sign-in__input::placeholder,
+.sign-up__input::placeholder {
+    color: #fff;
+    font-size: 17px;
+}
+
+.auth-section__submit {
+    border: none;
+    background: #ffab1a;
+    color: #fff;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.sign-in__save-pass,
+.sign-up__conditions {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    font-weight: lighter;
+    border: none;
+    margin: 10px 0 30px;
+}
+
+.sign-up__label,
+.sign-in__label {
+    color: #fff;
+    font-size: 15px;
+    flex-wrap: nowrap;
+}
+
+input[type=checkbox] {
+    margin-right: 7px;
+    width: 18px;
+    height: 18px;
+}
+
+input[type=checkbox]:checked {
+    position: relative;
+}
+
+input[type=checkbox]:checked:after {
+    position: absolute;
+    content: '\2714';
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background: #2159a7;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.auth-section__link {
+    margin: 20px 0;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
