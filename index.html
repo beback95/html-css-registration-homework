@@ -8,32 +8,32 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   </head>
   <body>
-    <main>
+    <main class="content">
       <section class="auth-section">
-        <input class="auth-section__radio radio sign-in-radio" type="radio" id="sign-in-radio" name="sign-tabs" checked/>
-        <label class="auth-section__label label" for="sign-in-radio">Sign In</label>
+        <input class="auth-section__radio sign-in-radio" type="radio" id="sign-in-radio" name="sign-tabs" checked/>
+        <label class="auth-section__label" for="sign-in-radio">Sign In</label>
 
-        <input class="auth-section__radio radio sign-up-radio" type="radio" id="sign-up-radio" name="sign-tabs"/>
-        <label class="auth-section__label label" for="sign-up-radio">Sign Up</label>
+        <input class="auth-section__radio sign-up-radio" type="radio" id="sign-up-radio" name="sign-tabs"/>
+        <label class="auth-section__label" for="sign-up-radio">Sign Up</label>
         
         <form class="auth-section__form sign-in" name="sign-in" method="POST" action="https://reqres.in/api/login">
-          <input class="sign-in__input text-field" name="email" type="email" placeholder="Email" required/>
-          <input class="sign-in__input text-field" name="password" type="password" placeholder="Password" required/>
+          <input class="sign-in__input" name="email" type="email" placeholder="Email" required/>
+          <input class="sign-in__input" name="password" type="password" placeholder="Password" required/>
           <div class="sign-in__save-pass">
-            <input class="sign-in__checkbox checkbox" id="remember" name="remember" type="checkbox" checked>
-            <label class="sign-in__label label" for="remember">Keep me logged in</label>
+            <input class="sign-in__checkbox" id="remember" name="remember" type="checkbox" checked>
+            <label class="sign-in__label" for="remember">Keep me logged in</label>
           </div>
           <input class="auth-section__submit" type="submit" value="login"/>
-          <a class="auth-section__link link" href="#">Forgot password?</a>
+          <a class="auth-section__link" href="#">Forgot password?</a>
         </form>
 
         <form class="auth-section__form sign-up" name="sign-up" method="POST" action="https://reqres.in/api/register">
-          <input class="sign-up__input text-field" name="mobilePhone" type="number" placeholder="Mobile Phone" required/>
-          <input class="sign-up__input text-field" name="email" type="email" placeholder="Email ID" required/>
-          <input class="sign-up__input text-field" name="password" type="password" placeholder="Password" required/>
+          <input class="sign-up__input" name="mobilePhone" type="number" placeholder="Mobile Phone" required/>
+          <input class="sign-up__input" name="email" type="email" placeholder="Email ID" required/>
+          <input class="sign-up__input" name="password" type="password" placeholder="Password" required/>
           <div class="sign-up__conditions">
-            <input class="sign-up__checkbox checkbox" id="conditions" name="conditions" type="checkbox" checked>
-            <label class="sign-up__label label" for="conditions">I agree to terms and conditions</label>
+            <input class="sign-up__checkbox" id="conditions" name="conditions" type="checkbox" checked>
+            <label class="sign-up__label" for="conditions">I agree to terms and conditions</label>
           </div>
           <input class="auth-section__submit" type="submit" value="register"/>
         </form>
