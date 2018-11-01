@@ -144,10 +144,7 @@ input[type=checkbox]:checked:after {
     margin: 20px 0;
 }
 
-a:link,
-a:active,
-a:hover,
-a:visited {
+a {
     font-size: 20px;
     text-decoration: none;
     color: #fff;
