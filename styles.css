@@ -117,16 +117,17 @@ input[type=number]::-webkit-outer-spin-button {
 .sign-in__save-pass,
 .sign-up__conditions {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     align-self: flex-start;
     font-weight: lighter;
     border: none;
     color: #fff;
+    line-height: 1.4;
     font-size: 15px;
     margin: 10px 0 30px;
 }
 
-.sign-in__save-pass,
+.sign-in__save-pass:hover,
 .sign-up__conditions:hover {
     cursor: pointer;
 }
@@ -172,4 +173,24 @@ a {
     font-size: 20px;
     text-decoration: none;
     color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    padding: 100px 10px;
+  }
+
+  .auth-section { 
+    padding: 25px;
+  }
+
+  .auth-section__submit {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .auth-section__label {
+    width: 200px;
+  }
 }
