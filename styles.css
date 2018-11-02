@@ -38,6 +38,10 @@
     text-transform: uppercase;
 }
 
+.auth-section__label:hover {
+  cursor: pointer;
+}
+
 .sign-in-radio:checked + label,
 .sign-up-radio:checked + label {
     border-bottom: 4px solid #ffab1a;
@@ -95,6 +99,16 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 20px;
     margin: 30px 0;
     text-transform: uppercase;
+    -webkit-transition: background 0.45s ease;
+    -moz-transition: background 0.45s ease;
+    -ms-transition: background 0.45s ease;
+    -o-transition: background 0.45s ease;
+    transition: background 0.45s ease;
+}
+
+.auth-section__submit:hover {
+  background: #ffcc74;
+  cursor: pointer;
 }
 
 .sign-in__save-pass,
@@ -109,6 +123,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 10px 0 30px;
 }
 
+.sign-in__save-pass,
+.sign-up__conditions:hover {
+    cursor: pointer;
+}
 
 .sign-in__checkbox,
 .sign-up__checkbox {
@@ -136,6 +154,11 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
     text-align: center;
     border-radius: 2px;
+}
+
+.sign-in__span:hover,
+.sign-up__span:hover {
+    cursor: pointer;
 }
 
 .auth-section__link {
