@@ -1,41 +1,41 @@
 @import url('./fonts.css');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Deja Vu Sans'
+  margin: 0;
+  padding: 0;
+  font-family: 'Deja Vu Sans';
 }
 
 .content {
-    background: #e3e3e3 url('./static/images/background.png') no-repeat center center;
-    background-size: cover;
-    min-height: 100vh;
-    width: 100%;
-    padding: 100px 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  background: #e3e3e3 url('./static/images/background.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .auth-section {
-    padding: 45px;
-    max-width: 430px;
-    background: rgba(0,0,0, 0.7);
-    width: 100%;
-    box-sizing: border-box;
+  padding: 45px;
+  max-width: 430px;
+  background: rgba(0,0,0, 0.7);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .auth-section__radio {
-    display: none;
+  display: none;
 }
 
 .auth-section__label {
-    width: 100px;
-    font-size: 22px;
-    color: #fff;
-    margin-right: 35px;
-    text-transform: uppercase;
+  width: 100px;
+  font-size: 22px;
+  color: #fff;
+  margin-right: 35px;
+  text-transform: uppercase;
 }
 
 .auth-section__label:hover {
@@ -44,36 +44,36 @@
 
 .sign-in-radio:checked + label,
 .sign-up-radio:checked + label {
-    border-bottom: 4px solid #ffab1a;
-    padding: 10px 0;
-    font-weight: 400;
+  border-bottom: 4px solid #ffab1a;
+  padding: 10px 0;
+  font-weight: 400;
 }
 
 .sign-in-radio:checked ~ .sign-in,
 .sign-up-radio:checked ~ .sign-up {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
 }
 
 .sign-in,
 .sign-up {
-    display: none;
+  display: none;
 }
 
 .sign-in__input,
 .sign-up__input {
-    width: 100%;
-    height: 30px;
-    margin: 30px 0;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 17px;
-    background: none;
-    border: none;
-    color: #fff;
-    border-bottom: 2px solid #fff;
+  width: 100%;
+  height: 30px;
+  margin: 30px 0;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 17px;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 input[type=number] {
@@ -88,25 +88,25 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sign-in__input::placeholder,
 .sign-up__input::placeholder {
-    color: #fff;
-    font-size: 17px;
+  color: #fff;
+  font-size: 17px;
 }
 
 .auth-section__submit {
-    border: none;
-    background: #ffab1a;
-    color: #fff;
-    border-radius: 30px;
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    margin: 30px 0;
-    text-transform: uppercase;
-    -webkit-transition: background 0.45s ease;
-    -moz-transition: background 0.45s ease;
-    -ms-transition: background 0.45s ease;
-    -o-transition: background 0.45s ease;
-    transition: background 0.45s ease;
+  border: none;
+  background: #ffab1a;
+  color: #fff;
+  border-radius: 30px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin: 30px 0;
+  text-transform: uppercase;
+  -webkit-transition: background 0.45s ease;
+  -moz-transition: background 0.45s ease;
+  -ms-transition: background 0.45s ease;
+  -o-transition: background 0.45s ease;
+  transition: background 0.45s ease;
 }
 
 .auth-section__submit:hover {
@@ -116,53 +116,53 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sign-in__save-pass,
 .sign-up__conditions {
-    display: flex;
-    align-items: flex-start;
-    align-self: flex-start;
-    font-weight: lighter;
-    border: none;
-    color: #fff;
-    line-height: 1.4;
-    font-size: 15px;
-    margin: 10px 0 30px;
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+  font-weight: lighter;
+  border: none;
+  color: #fff;
+  line-height: 1.4;
+  font-size: 15px;
+  margin: 10px 0 30px;
 }
 
 .sign-in__save-pass:hover,
 .sign-up__conditions:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .sign-in__checkbox,
 .sign-up__checkbox {
-    display: none;
+  display: none;
 }
 
 .sign-in__checkbox + .sign-in__span,
 .sign-up__checkbox + .sign-up__span {
-    position: relative;
-    width: 20px;
-    background: #fff;
-    height: 20px;
-    margin-right: 7px;
-    border-radius: 2px;
+  position: relative;
+  width: 20px;
+  background: #fff;
+  height: 20px;
+  margin-right: 7px;
+  border-radius: 2px;
 }
 
 .sign-in__checkbox:checked + .sign-in__span::after,
 .sign-up__checkbox:checked + .sign-up__span::after {
-    position: absolute;
-    content: '\2714';
-    background: #2159a7;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 2px;
+  position: absolute;
+  content: '\2714';
+  background: #2159a7;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 2px;
 }
 
 .sign-in__span:hover,
 .sign-up__span:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .auth-section__link {
@@ -170,9 +170,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 @media only screen and (max-width: 500px) {
@@ -186,11 +186,5 @@ a {
 
   .auth-section__submit {
     margin: 10px 0;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .auth-section__label {
-    width: 200px;
   }
 }
