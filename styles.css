@@ -134,8 +134,8 @@
   display: none;
 }
 
-.sign-in__checkbox + .sign-in__span,
-.sign-up__checkbox + .sign-up__span {
+.sign-in__checkbox + .sign-in__checkbox-icon,
+.sign-up__checkbox + .sign-up__checkbox-icon {
   position: relative;
   width: 20px;
   background: #fff;
@@ -144,8 +144,8 @@
   border-radius: 2px;
 }
 
-.sign-in__checkbox:checked + .sign-in__span::after,
-.sign-up__checkbox:checked + .sign-up__span::after {
+.sign-in__checkbox:checked + .sign-in__checkbox-icon::after,
+.sign-up__checkbox:checked + .sign-up__checkbox-icon::after {
   position: absolute;
   content: '\2714';
   background: #2159a7;
@@ -164,8 +164,8 @@
   font-size: 15px;
 }
 
-.sign-in__span:hover,
-.sign-up__span:hover {
+.sign-in__checkbox-icon:hover,
+.sign-up__checkbox-icon:hover {
   cursor: pointer;
 }
 
