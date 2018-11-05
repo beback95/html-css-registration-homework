@@ -19,22 +19,24 @@
         <form class="auth-section__form sign-in" name="sign-in" method="POST" action="https://reqres.in/api/login">
           <input class="sign-in__input" name="email" type="email" placeholder="Email" required/>
           <input class="sign-in__input" name="password" type="password" placeholder="Password" required/>
-          <div class="sign-in__save-pass">
-            <input class="sign-in__checkbox" id="remember" name="remember" type="checkbox" checked>
-            <label class="sign-in__label" for="remember">Keep me logged in</label>
-          </div>
+          <label class="sign-in__save-pass">
+            <input class="sign-in__checkbox" name="remember" type="checkbox" checked>
+            <span class="sign-in__checkbox-icon"></span>
+            <span class="sign-in__text">Keep me logged in</span>
+          </label>
           <input class="auth-section__submit" type="submit" value="login"/>
           <a class="auth-section__link" href="#">Forgot password?</a>
         </form>
 
         <form class="auth-section__form sign-up" name="sign-up" method="POST" action="https://reqres.in/api/register">
-          <input class="sign-up__input" name="mobilePhone" type="number" placeholder="Mobile Phone" required/>
+          <input class="sign-up__input sign-up__input_number" name="mobilePhone" type="number" placeholder="Mobile Phone" required/>
           <input class="sign-up__input" name="email" type="email" placeholder="Email ID" required/>
           <input class="sign-up__input" name="password" type="password" placeholder="Password" required/>
-          <div class="sign-up__conditions">
-            <input class="sign-up__checkbox" id="conditions" name="conditions" type="checkbox" checked>
-            <label class="sign-up__label" for="conditions">I agree to terms and conditions</label>
-          </div>
+          <label class="sign-up__conditions">
+            <input class="sign-up__checkbox" name="conditions" type="checkbox" checked>
+            <span class="sign-up__checkbox-icon"></span>
+            <span class="sign-up__text">I agree to terms and conditions</span>
+          </label>
           <input class="auth-section__submit" type="submit" value="register"/>
         </form>
       </section>
