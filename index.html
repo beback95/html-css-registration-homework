@@ -22,20 +22,20 @@
           <label class="sign-in__save-pass">
             <input class="sign-in__checkbox" name="remember" type="checkbox" checked>
             <span class="sign-in__span"></span>
-            Keep me logged in
+            <span class="sign-in__text">Keep me logged in</span>
           </label>
           <input class="auth-section__submit" type="submit" value="login"/>
           <a class="auth-section__link" href="#">Forgot password?</a>
         </form>
 
         <form class="auth-section__form sign-up" name="sign-up" method="POST" action="https://reqres.in/api/register">
-          <input class="sign-up__input" name="mobilePhone" type="number" placeholder="Mobile Phone" required/>
+          <input class="sign-up__input sign-up__input_number" name="mobilePhone" type="number" placeholder="Mobile Phone" required/>
           <input class="sign-up__input" name="email" type="email" placeholder="Email ID" required/>
           <input class="sign-up__input" name="password" type="password" placeholder="Password" required/>
           <label class="sign-up__conditions">
             <input class="sign-up__checkbox" name="conditions" type="checkbox" checked>
             <span class="sign-up__span"></span>
-            I agree to terms and conditions
+            <span class="sign-up__text">I agree to terms and conditions</span>
           </label>
           <input class="auth-section__submit" type="submit" value="register"/>
         </form>
